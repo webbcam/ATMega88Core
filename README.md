@@ -17,8 +17,9 @@ In the Arduino IDE, select Tools > Board and under "ATMega Chips"
 select ATMega88. You can then select the Brown Out Detection (B.O.D),  
 and the Clock Source
 
-Note:   You will need to select the correct Programmer under Tools that you  
-        are using. I have only tested it with a USBTiny Programmer
+## Notes:  
+  You will need to select the correct Programmer under Tools that you  
+  are using. I have only tested it with a USBTiny Programmer
 
-        Also, when burning the bootloader onto the chip, you will need to  
-        use a 16MHz external clock/crystal.
+  Also, when burning the bootloader onto the chip, you will need to  
+  use a 16MHz external clock/crystal.
