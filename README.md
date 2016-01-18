@@ -8,14 +8,12 @@ This core will allow you to upload sketches onto your ATMega88
 using the Arduino IDE
 
 # Installation Instructions
-1)  Clone this repository into your Arduino/hardware folder  
-    (if the hardware folder does not exist, create one)
+1)  Clone this repository into your Arduino/hardware folder (if the hardware folder does not exist, create one)  
 2)  Restart Arduino IDE
 
 # Use
-In the Arduino IDE, select Tools > Board and under "ATMega Chips" 
-select ATMega88. You can then select the Brown Out Detection (B.O.D),  
-and the Clock Source
+In the Arduino IDE, select Tools > Board and under "ATMega Chips" select ATMega88.
+You can then select the Brown Out Detection (B.O.D), and the Clock Source
 
 ## Notes:  
   You will need to select the correct Programmer under Tools that you  
