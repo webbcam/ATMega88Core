@@ -1,0 +1,48 @@
+# See: http://code.google.com/p/arduino/wiki/Platforms
+
+menu.cpu=Processor
+menu.chip=Chip
+menu.clock=Clock
+menu.bod=B.O.D.
+
+##############################################################
+
+atmega88.name=ATmega88
+ 
+atmega88.upload.tool=arduino:usbtiny
+atmega88.upload.maximum_size=7168
+atmega88.upload.speed=115200
+
+atmega88.bootloader.tool=arduino:avrdude		
+atmega88.bootloader.extended_fuses=0x00
+atmega88.bootloader.file=atmega88/ATmegaBOOT_88_m88.hex
+atmega88.bootloader.unlock_bits=0x3F
+atmega88.bootloader.lock_bits=0x0F
+ 
+atmega88.build.mcu=atmega88
+atmega88.build.board=AVR_ATMEGA88
+atmega88.menu.clock.1internal= 1 MHz (internal)
+atmega88.menu.clock.1internal.build.f_cpu=1000000L
+atmega88.menu.clock.1internal.bootloader.low_fuses=0x62
+atmega88.menu.clock.8internal= 8 MHz (internal)
+atmega88.menu.clock.8internal.build.f_cpu=8000000L
+atmega88.menu.clock.8internal.bootloader.low_fuses=0xE2
+atmega88.menu.clock.16external=16 MHz (external)
+atmega88.menu.clock.16external.bootloader.low_fuses=0xFF
+atmega88.menu.clock.16external.build.f_cpu=16000000L
+atmega88.menu.clock.20external=20 MHz (external)
+atmega88.menu.clock.20external.bootloader.low_fuses=0xFF
+atmega88.menu.clock.20external.build.f_cpu=20000000L
+
+atmega88.menu.bod.disable=B.O.D. Disabled
+atmega88.menu.bod.disable.bootloader.high_fuses=0xDF
+atmega88.menu.bod.1v8=B.O.D. Enabled (1.8v)
+atmega88.menu.bod.1v8.bootloader.high_fuses=0xDE
+atmega88.menu.bod.2v7=B.O.D. Enabled (2.7v)
+atmega88.menu.bod.2v7.bootloader.high_fuses=0xDD
+atmega88.menu.bod.4v3=B.O.D. Enabled (4.3v)
+atmega88.menu.bod.4v3.bootloader.high_fuses=0xDC
+atmega88.build.core=arduino:arduino
+atmega88.build.variant=arduino:standard
+
+##############################################################
